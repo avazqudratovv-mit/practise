@@ -2,11 +2,12 @@
 
 /* A-TASK (NodeJS):
 *  SAVOL: Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
-MASALAN countLetter("e", "engineer") 3ni return qiladi.
+MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
-/* Masalaning yechimi:
+// Masalaning yechimi:
 let count = 0;
 function countLetter(letter, word) {
+    let count = 0;
     for (let x = 0; x <= word.length; x++) {
         if (word[x] === letter) {
             count++;
@@ -15,4 +16,3 @@ function countLetter(letter, word) {
   return count;}
 const result = countLetter("a", "javascript");
 console.log("return:", result); 
-*/
