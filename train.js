@@ -7,7 +7,6 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 // Masalaning yechimi:
 let count = 0;
 function countLetter(letter, word) {
-    let count = 0;
     for (let x = 0; x <= word.length; x++) {
         if (word[x] === letter) {
             count++;
