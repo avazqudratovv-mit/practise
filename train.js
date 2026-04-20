@@ -1,10 +1,24 @@
+/* C-TASK (NodeJS)
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+function checkContent(word1, word2) {
+    const sorted1 = word1.split("").sort().join("")
+    const sorted2 = word2.split("").sort().join("")
+    return sorted1 === sorted2
+}
+
+const result = checkContent("macos", "oscma")
+console.log("result:", result) // true chiqdi
+// ------------------------------------------------------
+
 /* B-TASK (NodeJS)
 
 Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
 MASALAN countDigits("ad2a54y79wet0sfgb9") 7ni return qiladi.
 */
 
-function countDigits(parametr){
+/* function countDigits(parametr){
     let count = 0
     for(let x = 0; x < parametr.length; x++) {
         if (parametr[x] >= "0" && parametr[x] <= "9"){
@@ -15,6 +29,7 @@ function countDigits(parametr){
 }
 const result = countDigits("cih29hr309824y308ch20h")
 console.log("result:", result)
+*/
 
 
 // ------------------------------------------------------
