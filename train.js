@@ -1,8 +1,30 @@
+/* D-TASK (NodeJS)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: getHighestIndex([5, 21, 12, 21, 8]) return qiladi 1 sonini.
+*/
+
+/* Masalaning yechimi: */
+ 
+function getHighestIndex(intigers) {
+    const max = Math.max(...intigers)
+    const index = intigers.indexOf(max)
+    return index
+}
+
+const result = getHighestIndex([59, 60, 3, 5, 99, 201])
+console.log("result:", result) 
+
+
+
+
+// ------------------------------------------------------
+
 /* C-TASK (NodeJS)
 Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
 MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 */
-function checkContent(word1, word2) {
+/* function checkContent(word1, word2) {
     const sorted1 = word1.split("").sort().join("")
     const sorted2 = word2.split("").sort().join("")
     return sorted1 === sorted2
@@ -10,6 +32,8 @@ function checkContent(word1, word2) {
 
 const result = checkContent("macos", "oscma")
 console.log("result:", result) // true chiqdi
+*/
+
 // ------------------------------------------------------
 
 /* B-TASK (NodeJS)
