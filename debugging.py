@@ -12,11 +12,11 @@ print("===== Python Packages & Core Package =====")
 
 
 # Core Package
-# t = turtle.Turtle()
-# t.shape("turtle")
-# t.speed(2)
-# t.circle(150)
-# turtle.done
+t = turtle.Turtle()
+t.shape("turtle")
+t.speed(2)
+t.circle(150)
+turtle.done
 
 print("-----")
 my_file = open("Material/message.txt", "r")
@@ -43,10 +43,10 @@ print("===== Package Manager & External Package =====")
 '''
 # External Package > https://pypi.org/
 
-# with Image.open("material/lego.png") as img_obj:
-#     resized_img = img_obj.resize((200, 200))
-#     resized_img.show()
-#     resized_img.save("Material/sample.png")
+with Image.open("material/lego.png") as img_obj:
+    resized_img = img_obj.resize((200, 200))
+    resized_img.show()
+    resized_img.save("Material/sample.png")
 
 print("===== Debugging =====")
 
