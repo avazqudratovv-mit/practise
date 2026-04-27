@@ -11,9 +11,23 @@ print("===== Python Packages & Core Package =====")
 
 
 # Core Package
-t = turtle.Turtle()
-t.shape("turtle")
-t.speed(2)
-t.circle(150)
+# t = turtle.Turtle()
+# t.shape("turtle")
+# t.speed(2)
+# t.circle(150)
+# turtle.done
 
-turtle.done
+print("-----")
+my_file = open("Material/message.txt", "r")
+try:
+    content = my_file.read()
+    print("context:", content)
+finally:
+    my_file.close()
+
+# with
+with open("Material/message.txt", "r") as your_file:
+    your_content = your_file.read()
+    print("your_content:", your_content)
+
+print('DONE')
