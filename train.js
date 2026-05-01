@@ -1,3 +1,21 @@
+/* G-TASK (PYTHON)
+
+Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
+MASALAN: get_highest_index([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
+
+/* Masalaning yechimi: */
+
+function get_highest_index(intigers) {
+    const max = Math.max(...intigers)
+    const index = intigers.indexOf(max)
+    return index
+}
+
+const result = get_highest_index([5, 21, 99, 21, 8])
+console.log("result:", result) // 2
+
+// ------------------------------------------------------
+
 /* F-TASK (NodeJS)
 
 Shunday findDoublers function tuzing, unga faqat bitta string argument pass bolib, agar stringda bir hil harf qatnashgan bolsa true, qatnashmasa false qaytarishi kerak.
@@ -5,7 +23,7 @@ MASALAN: getReverse("hello") return true return qiladi */
 
 /* Masalaning yechimi: */
 
-function findDoublers(a) {
+/* function findDoublers(a) {
     const doubler = a.split("")
     for (let i = 0; i < doubler.length; i++){
         if (doubler.filter(l => l === doubler[i]).length > 1) {
@@ -15,7 +33,7 @@ function findDoublers(a) {
 return false
 }
 const result = findDoublers("bigger")
-console.log("result:",result) 
+console.log("result:",result) */
 
 // ------------------------------------------------------
 
