@@ -1,3 +1,21 @@
+
+/* H-TASK (NodeJS)
+
+shunday function tuzing, u integerlardan iborat arrayni argument sifatida qabul qilib, faqat positive qiymatlarni olib string holatda return qilsin
+MASALAN: getPositive([1, -4, 2]) return qiladi "12" */
+
+/* Masalaning yechimi: */
+
+function getPositive(a) {
+    const positive = a.filter((b) => b >= 0);
+    const string = positive.join("")
+    return string
+}
+const result = getPositive([1, -4, 2, 6, 5, -9, -1]);
+console.log("result:", result)
+
+// ------------------------------------------------------
+
 /* G-TASK (PYTHON)
 
 Shunday function tuzingki unga integerlardan iborat array pass bolsin va function bizga osha arrayning eng katta qiymatiga tegishli birinchi indexni qaytarsin.
@@ -5,14 +23,14 @@ MASALAN: get_highest_index([5, 21, 12, 21, 8]) return qiladi 1 sonini. */
 
 /* Masalaning yechimi: */
 
-function get_highest_index(intigers) {
-    const max = Math.max(...intigers)
-    const index = intigers.indexOf(max)
-    return index
-}
+// function get_highest_index(intigers) {
+//     const max = Math.max(...intigers)
+//     const index = intigers.indexOf(max)
+//     return index
+// }
 
-const result = get_highest_index([5, 21, 99, 21, 8])
-console.log("result:", result) // 2
+// const result = get_highest_index([5, 21, 99, 21, 8])
+// console.log("result:", result) // 2
 
 // ------------------------------------------------------
 
