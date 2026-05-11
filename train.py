@@ -1,3 +1,23 @@
+# K-TASK (PYTHON)
+
+# Shunday function yozing, u string qabul qilsin va string ichidagi eng uzun sozni qaytarsin.
+# MASALAN: find_longest("I come from Uzbekistan") return "Uzbekistan"
+
+#  Masalaning yechimi:
+
+def find_longest(a):
+    b = a.split(" ")
+    uzun = ""
+    for word in b:
+        if len(word) > len(uzun):
+            uzun = word
+    return uzun
+
+
+print(find_longest("men nega buni qileppane"))
+
+
+#  ------------------------------------------------------
 
 # I-TASK (PYTHON)
 
@@ -6,12 +26,12 @@
 
 #  Masalaning yechimi:
 
-def get_digits(a):
-    result = [x for x in a if x.isdigit()]
-    return "".join(result)
+# def get_digits(a):
+#     result = [x for x in a if x.isdigit()]
+#     return "".join(result)
 
 
-print(get_digits("iasubf8u23923"))  # "141"
+# print(get_digits("iasubf8u23923"))  # "141"
 
 
 #  ------------------------------------------------------

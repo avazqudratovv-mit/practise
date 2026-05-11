@@ -1,4 +1,7 @@
 
+
+// ------------------------------------------------------
+
 /* J-TASK (NodeJS)
 
 Shunday function yozing, u parametridagi array ichida eng kop takrorlangan raqamni topib qaytarsin.
@@ -6,23 +9,23 @@ MASALAN: majorityElement([1,2,3,4,5,4,3,4]) return 4 */
 
 /* Masalaning yechimi: */ 
 
-function majorityElement(a) {
-    let maxCount = 0
-    let result = a[0]
+// function majorityElement(a) {
+//     let maxCount = 0
+//     let result = a[0]
     
-    for (let i = 0; i < a.length; i++) {
-        const count = a.filter((num) => num === a[i]).length
-        if (count > maxCount) {
-            maxCount = count
-            result = a[i]
-        }
-    }
+//     for (let i = 0; i < a.length; i++) {
+//         const count = a.filter((num) => num === a[i]).length
+//         if (count > maxCount) {
+//             maxCount = count
+//             result = a[i]
+//         }
+//     }
     
-    return result
-}
+//     return result
+// }
 
-const result = majorityElement([9, 1, 2, 4, 4, 9, 4, 1])
-console.log("result:", result) 
+// const result = majorityElement([9, 1, 2, 4, 4, 9, 4, 1])
+// console.log("result:", result) 
 
 // ------------------------------------------------------
 
